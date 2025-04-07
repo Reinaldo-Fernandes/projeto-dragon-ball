@@ -1,66 +1,68 @@
-/* ========================== */
-/* RESPONSIVO - TELAS PEQUENAS */
-/* ========================== */
-@media (max-width: 768px) {
-    main {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
+@media (max-width: 768px){
+    main::after{
+        background: linear-gradient(0deg, #000 45%, rgba(0, 0, 0, 0.00) 70%) no-repeat;
+        width: 100vw;
     }
-  
-    .conteudo {
-      max-width: 100%;
-      text-align: center;
-      padding: 1rem;
+
+    main .personagem .imagem{
+        height: 85%;
+        object-position: center;
     }
-  
-    .nome-personagem {
-      font-size: 2rem;
+
+    .conteudo{
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width: 100vw;
+        padding: 30px;
     }
-  
-    .descricao {
-      font-size: 1rem;
+
+    .conteudo .nome-personagem{
+        font-size: 30px;
     }
-  
-    .personagem {
-      max-width: 100%;
+
+    .conteudo .descricao{
+        max-width: 500px;
     }
-  
-    .botoes {
-      justify-content: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
+
+
+    .botoes{
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 30px;
     }
-  
-    .botao img {
-      width: 40px;
-      height: 40px;
+
+    .botoes .botao{
+        width: 70px;
+        height: 70px;
     }
-  
-    .botao {
-      padding: 8px;
+
+    .botoes .botao img{
+        max-width: 70px;
     }
-  }
-  
-  /* ========================== */
-  /* TELAS MUITO PEQUENAS */
-  /* ========================== */
-  @media (max-width: 480px) {
-    .nome-personagem {
-      font-size: 1.6rem;
+}
+
+@media (max-width: 425px){
+    main .personagem .imagem{
+        height: auto;
     }
-  
-    .descricao {
-      font-size: 0.95rem;
+
+    .conteudo{
+        top: -20%;
     }
-  
-    .botao img {
-      width: 35px;
-      height: 35px;
+
+    .botoes{
+        padding: 20px;
+        top: -10%;
     }
-  
-    .botao {
-      padding: 6px;
+
+    .botoes .botao{
+        width: 50px;
+        height: 50px;
     }
-  }
-  
+
+    .botoes .botao img{
+        max-width: 50px;
+    }
+}
